@@ -2,10 +2,12 @@
 
 CS6611 Project - Fungi Edibility Classification - ResNet, Efficient Net & Inception Networks
 
+## Team Members 
+- Surya Charan P
+- Sai Krishna P
+- Anas M
+
 ## To Do
 
-- Exploratoy Data Analysis
-- Pre-processing (Partially done)
-- Model Implementation
-- Transfer Learning
+- Model Implementation (1)
 - Web Interface
