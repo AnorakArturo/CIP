@@ -1,5 +1,14 @@
-import tensorflow as tf
-print(tf.__version__)
+import numpy as np
+print(np.__version__)
+
+import pkg_resources
+
+installed_packages = [pkg.key for pkg in pkg_resources.working_set]
+print(installed_packages)
+
+import sys
+
+print(sys.prefix)
 
 # # Path to the saved model directory
 # model_dir = 'D:/model'
