@@ -9,5 +9,5 @@ CS6611 Project - Fungi Edibility Classification - ResNet, Efficient Net & Incept
 
 ## To Do
 
-- Model Implementation (1)
-- Web Interface
+- Polishing
+- Web Deployment
