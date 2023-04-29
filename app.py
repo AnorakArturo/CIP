@@ -8,7 +8,7 @@ import os
 IMAGE_SIZE = 240
 # Define the path to the saved model
 drive_url = os.environ.get('drive_url')
-model_path = 'drive_url'
+model_path = drive_url
 
 # Load the saved model
 model = tf.keras.models.load_model(model_path)
