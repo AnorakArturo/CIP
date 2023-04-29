@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, render_template
 
 IMAGE_SIZE = 240
 # Define the path to the saved model
-model_path = 'D:/model'
+model_path = 'https://drive.google.com/drive/folders/19VCyjtvis5TMkgPfsBp2efhjPiEqZPMB?usp=share_link'
 
 # Load the saved model
 model = tf.keras.models.load_model(model_path)
