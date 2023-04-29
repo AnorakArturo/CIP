@@ -2,10 +2,13 @@ import tensorflow as tf
 import numpy as np
 import cv2
 from flask import Flask, request, jsonify, render_template
+import os
+
 
 IMAGE_SIZE = 240
 # Define the path to the saved model
-model_path = 'https://drive.google.com/drive/folders/19VCyjtvis5TMkgPfsBp2efhjPiEqZPMB?usp=share_link'
+drive_url = os.environ.get('drive_url')
+model_path = 'drive_url'
 
 # Load the saved model
 model = tf.keras.models.load_model(model_path)
