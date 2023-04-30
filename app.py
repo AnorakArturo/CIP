@@ -4,9 +4,9 @@ import cv2
 from flask import Flask, request, jsonify, render_template
 
 IMAGE_SIZE = 240
+
 # Define the path to the saved model
 model_path = 'model'
-
 # Load the saved model
 model = tf.keras.models.load_model(model_path)
 
