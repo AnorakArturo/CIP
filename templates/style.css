@@ -1,0 +1,119 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* for horizontal */
+    align-items: center;
+    /* for vertical */
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font: 1rem 'Roboto', sans-serif; */
+    text-align: center;
+}
+
+/* #wrapper {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+} */
+
+.gradient-pattern {
+    animation: gradient 4s ease infinite;
+    background-image: linear-gradient(135deg, #FF9D2E, #F39BBB);
+    background-size: 400% 400%;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 51% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 51% 0%;
+    }
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+}
+
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border::after {
+    border-top-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border:hover {
+    color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #ffe593;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: black;
+    background-blend-mode: color-dodge;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}

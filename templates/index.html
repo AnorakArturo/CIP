@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Fungi Classification Demo</title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  
+
 <body>
-  <h1>Fungi Classification Demo</h1>
-  <form action="/predict" method="POST" enctype="multipart/form-data">
-    <input type="file" name="image">
-    <button type="submit">Predict</button>
-  </form>
-  <div id="prediction"></div>
-  <script>
-    const form = document.querySelector('form');
-    const predictionDiv = document.querySelector('#prediction');
+  <div class="gradient-pattern">
+    <h1>Fungi Classification Demo</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image">
+      <button type="submit" class='btn draw-border'>Predict</button>
+    </form>
+    <div id="prediction"></div>
+    <script>
+      const form = document.querySelector('form');
+      const predictionDiv = document.querySelector('#prediction');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-      const formData = new FormData(form);
-      const response = await fetch('/predict', {
-        method: 'POST',
-        body: formData
+        const formData = new FormData(form);
+        const response = await fetch('/predict', {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+        predictionDiv.textContent = `Model prediction: ${result.predicted_class}`;
       });
-
-      const result = await response.json();
-      predictionDiv.textContent = `Model prediction: ${result.predicted_class}`;
-    });
-  </script>
+    </script>
+    <footer>
+      <p>A Team 24 Production</p>
+      <p>Sai krishna P, Surya Charan P, Anas M</p>
+    </footer>
+  </div>
 </body>
+
 </html>
