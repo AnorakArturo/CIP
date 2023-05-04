@@ -9,7 +9,15 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     /* font: 1rem 'Roboto', sans-serif; */
     text-align: center;
+    background-image: url("th-3081741174.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-size: larger;
+    overflow: hidden;
 }
+
+
 
 /* #wrapper {
     display: flex;
@@ -20,7 +28,7 @@ body {
     justify-content: center;
 } */
 
-.gradient-pattern {
+/* .gradient-pattern {
     animation: gradient 4s ease infinite;
     background-image: linear-gradient(135deg, #FF9D2E, #F39BBB);
     background-size: 400% 400%;
@@ -40,7 +48,7 @@ body {
     100% {
         background-position: 51% 0%;
     }
-}
+} */
 
 .btn {
     background: none;
@@ -86,7 +94,7 @@ body {
 }
 
 .draw-border:hover {
-    color: #ffe593;
+    color: #ffd093;
 }
 
 .draw-border:hover::before,
@@ -108,7 +116,7 @@ body {
 footer {
     text-align: center;
     padding: 3px;
-    color: black;
+    color: #FFFFFF;
     background-blend-mode: color-dodge;
     position: absolute;
     left: 0;
