@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <title>Fungi Classification Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css', _external=True) }}">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   
 
 <body>
-  <div class="gradient-pattern">
+  <div class="main">
     <h1>Fungi Classification Demo</h1>
     <form action="/predict" method="POST" enctype="multipart/form-data">
       <input type="file" name="image">

@@ -132,3 +132,4 @@ dmypy.json
 # Node Modules
 node_modules/
 .vercel
+*.png
