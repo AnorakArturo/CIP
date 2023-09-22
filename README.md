@@ -16,5 +16,6 @@ The development of an accurate and reliable image classification model to distin
 
 ## About this Repository
 The Jupyter Notebook contains code covering dataset pre-processing, augmentation and related activies, then model definition, compilation and training. Then, a function to use the stored model to make predictions based on the uploaded image. 
-The dataset is from Kaggle - [Kaggle Link](https://www.kaggle.com/datasets/marcosvolpato/edible-and-poisonous-fungi)
+The dataset is from [Kaggle](https://www.kaggle.com/datasets/marcosvolpato/edible-and-poisonous-fungi).
+
 The Flask application uses localhost and the HTML page to display a webpasge for the user to upload a image which is then processed and evaluated by the model. The model responds with the classification and is displayed on the webpage accordingly.
